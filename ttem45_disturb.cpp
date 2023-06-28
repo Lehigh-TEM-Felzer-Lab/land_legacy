@@ -1102,134 +1102,148 @@ void Ttem45::cropDynamics( const int& pdm, const int& pdyr, const double& nmax_g
 //   ag.fertn = 10./5.0;
 //   }
 // cout << "in cropdynamics " << ag.fert1950flag << endl;
-  if((ag.fert1950flag == 1) && (ag.state == 1 || ag.state == 3) && pdm == 4) {
-//   ag.fertn = 5.0;
-//   ag.fertn = 10.0;
-//   ag.fertn = 15.0;
-//   ag.fertn = 19.0;
-//if(startyr+pdyr >= 1910) {   
-//cout << "Cropdynamics = " << startyr << " " << pdyr << " " << startyr+pdyr << endl;
-//}
-if(startyr + pdyr < 1910) { ag.fertn = 0.0; }
-//if(pdyr < 209) { ag.fertn = 0.0; }
-//if(pdyr >= 209 && pdyr <= 244) { ag.fertn = 1.0;}
-//if(pdyr >= 245 && pdyr <= 257) { ag.fertn = 2.0;}
-if(startyr+pdyr == 1910) { ag.fertn = 0.51; }
-if(startyr+pdyr == 1911) { ag.fertn = 0.54; }
-if(startyr+pdyr == 1912) { ag.fertn = 0.56; }
-if(startyr+pdyr == 1913) { ag.fertn = 0.58; }
-if(startyr+pdyr == 1914) { ag.fertn = 0.59; }
-if(startyr+pdyr == 1915) { ag.fertn = 0.61; }
-if(startyr+pdyr == 1916) { ag.fertn = 0.62; }
-if(startyr+pdyr == 1917) { ag.fertn = 0.63; }
-if(startyr+pdyr == 1918) { ag.fertn = 0.65; }
-if(startyr+pdyr == 1919) { ag.fertn = 0.66; }
-if(startyr+pdyr == 1920) { ag.fertn = 0.67; }
-if(startyr+pdyr == 1921) { ag.fertn = 0.69; }
-if(startyr+pdyr == 1922) { ag.fertn = 0.70; }
-if(startyr+pdyr == 1923) { ag.fertn = 0.72; }
-if(startyr+pdyr == 1924) { ag.fertn = 0.72; }
-if(startyr+pdyr == 1925) { ag.fertn = 0.73; }
-if(startyr+pdyr == 1926) { ag.fertn = 0.75; }
-if(startyr+pdyr == 1927) { ag.fertn = 0.76; }
-if(startyr+pdyr == 1928) { ag.fertn = 0.77; }
-if(startyr+pdyr == 1929) { ag.fertn = 0.78; }
-if(startyr+pdyr == 1930) { ag.fertn = 0.79; }
-if(startyr+pdyr == 1931) { ag.fertn = 0.80; }
-if(startyr+pdyr == 1932) { ag.fertn = 0.81; }
-if(startyr+pdyr == 1933) { ag.fertn = 0.82; }
-if(startyr+pdyr == 1934) { ag.fertn = 0.84; }
-if(startyr+pdyr == 1935) { ag.fertn = 0.85; }
-if(startyr+pdyr == 1936) { ag.fertn = 0.86; }
-if(startyr+pdyr == 1937) { ag.fertn = 0.87; }
-if(startyr+pdyr == 1938) { ag.fertn = 0.94; }
-if(startyr+pdyr == 1939) { ag.fertn = 1.02; }
-if(startyr+pdyr == 1940) { ag.fertn = 1.09; }
-if(startyr+pdyr == 1941) { ag.fertn = 1.16; }
-if(startyr+pdyr == 1942) { ag.fertn = 1.24; }
-if(startyr+pdyr == 1943) { ag.fertn = 1.31; }
-if(startyr+pdyr == 1944) { ag.fertn = 1.38; }
-if(startyr+pdyr == 1945) { ag.fertn = 1.46; }
-if(startyr+pdyr == 1946) { ag.fertn = 1.53; }
-if(startyr+pdyr == 1947) { ag.fertn = 1.61; }
-if(startyr+pdyr == 1948) { ag.fertn = 1.68; }
-if(startyr+pdyr == 1949) { ag.fertn = 1.75; }
-if(startyr+pdyr == 1950) { ag.fertn = 1.83; }
-if(startyr+pdyr == 1951) { ag.fertn = 1.90; }
-if(startyr+pdyr == 1952) { ag.fertn = 1.97; }
-if(startyr+pdyr == 1953) { ag.fertn = 2.05; }
-if(startyr+pdyr == 1954) { ag.fertn = 2.12; }
-if(startyr+pdyr == 1955) { ag.fertn = 2.19; }
-if(startyr+pdyr == 1956) { ag.fertn = 2.27; }
-if(startyr+pdyr == 1957) { ag.fertn = 2.34; }
-if(startyr+pdyr == 1958) { ag.fertn = 2.94; }
-if(startyr+pdyr == 1959) { ag.fertn = 3.53; }
-if(startyr+pdyr == 1960) { ag.fertn = 4.13; }
-if(startyr+pdyr == 1961) { ag.fertn = 4.72; }
-if(startyr+pdyr == 1962) { ag.fertn = 5.32; }
-if(startyr+pdyr == 1963) { ag.fertn = 5.91; }
-if(startyr+pdyr == 1964) { ag.fertn = 6.51; }
-if(startyr+pdyr == 1965) { ag.fertn = 8.41; }
-if(startyr+pdyr == 1966) { ag.fertn = 9.65; }
-if(startyr+pdyr == 1967) { ag.fertn = 10.43; }
-if(startyr+pdyr == 1968) { ag.fertn = 11.67; }
-if(startyr+pdyr == 1969) { ag.fertn = 12.34; }
-if(startyr+pdyr == 1970) { ag.fertn = 12.56; }
-if(startyr+pdyr == 1971) { ag.fertn = 12.0; }
-if(startyr+pdyr == 1972) { ag.fertn = 12.9; }
-if(startyr+pdyr == 1973) { ag.fertn = 12.79; }
-if(startyr+pdyr == 1974) { ag.fertn = 11.55; }
-if(startyr+pdyr == 1975) { ag.fertn = 11.78; }
-if(startyr+pdyr == 1976) { ag.fertn = 14.25; }
-if(startyr+pdyr == 1977) { ag.fertn = 14.36; }
-if(startyr+pdyr == 1978) { ag.fertn = 14.13; }
-if(startyr+pdyr == 1979) { ag.fertn = 15.14; }
-if(startyr+pdyr == 1980) { ag.fertn = 14.58; }
-if(startyr+pdyr == 1981) { ag.fertn = 15.37; }
-if(startyr+pdyr == 1982) { ag.fertn = 15.14; }
-if(startyr+pdyr == 1983) { ag.fertn = 15.37; }
-if(startyr+pdyr == 1984) { ag.fertn = 15.48; }
-if(startyr+pdyr == 1985) { ag.fertn = 15.71; }
-if(startyr+pdyr == 1986) { ag.fertn = 14.81; }
-if(startyr+pdyr == 1987) { ag.fertn = 14.81; }
-if(startyr+pdyr == 1988) { ag.fertn = 15.37; }
-if(startyr+pdyr == 1989) { ag.fertn = 14.70; }
-if(startyr+pdyr == 1990) { ag.fertn = 14.81; }
-if(startyr+pdyr == 1991) { ag.fertn = 14.36; }
-if(startyr+pdyr == 1992) { ag.fertn = 14.25; }
-if(startyr+pdyr == 1993) { ag.fertn = 13.8; }
-if(startyr+pdyr == 1994) { ag.fertn = 14.47; }
-if(startyr+pdyr == 1995) { ag.fertn = 14.58; }
-if(startyr+pdyr == 1996) { ag.fertn = 14.92; }
-if(startyr+pdyr == 1997) { ag.fertn = 14.58; }
-if(startyr+pdyr == 1998) { ag.fertn = 14.92; }
-if(startyr+pdyr == 1999) { ag.fertn = 14.92; }
-if(startyr+pdyr == 2000) { ag.fertn = 15.26; }
-if(startyr+pdyr == 2001) { ag.fertn = 14.29; }
-if(startyr+pdyr == 2002) { ag.fertn = 15.37; }
-if(startyr+pdyr == 2003) { ag.fertn = 15.26; }
-if(startyr+pdyr == 2004) { ag.fertn = 15.37; }
-if(startyr+pdyr == 2005) { ag.fertn = 15.48; }
-if(startyr+pdyr == 2006) { ag.fertn = 15.53; }
-if(startyr+pdyr == 2007) { ag.fertn = 15.57; }
-if(startyr+pdyr == 2008) { ag.fertn = 15.62; }
-if(startyr+pdyr == 2009) { ag.fertn = 15.66; }
-if(startyr+pdyr == 2010) { ag.fertn = 15.71; }
-if(startyr+pdyr == 2011) { ag.fertn = 15.71; } 
-if(startyr+pdyr > 2011) { ag.fertn = 15.71; } 
-//if(startyr+pdyr < 1950) 
-//{
-//  ag.fertn = 0.0;
-//}
-//else
-//{
-//  ag.fertn = 15.0;
-//}
-//ag.fertn = 15.0;
+//   if((ag.fert1950flag == 1) && (ag.state == 1 || ag.state == 3) && pdm == 4) {
+// //   ag.fertn = 5.0;
+// //   ag.fertn = 10.0;
+// //   ag.fertn = 15.0;
+// //   ag.fertn = 19.0;
+// //if(startyr+pdyr >= 1910) {   
+// //cout << "Cropdynamics = " << startyr << " " << pdyr << " " << startyr+pdyr << endl;
+// //}
+// if(startyr + pdyr < 1910) { ag.fertn = 0.0; }
+// //if(pdyr < 209) { ag.fertn = 0.0; }
+// //if(pdyr >= 209 && pdyr <= 244) { ag.fertn = 1.0;}
+// //if(pdyr >= 245 && pdyr <= 257) { ag.fertn = 2.0;}
+// if(startyr+pdyr == 1910) { ag.fertn = 0.51; }
+// if(startyr+pdyr == 1911) { ag.fertn = 0.54; }
+// if(startyr+pdyr == 1912) { ag.fertn = 0.56; }
+// if(startyr+pdyr == 1913) { ag.fertn = 0.58; }
+// if(startyr+pdyr == 1914) { ag.fertn = 0.59; }
+// if(startyr+pdyr == 1915) { ag.fertn = 0.61; }
+// if(startyr+pdyr == 1916) { ag.fertn = 0.62; }
+// if(startyr+pdyr == 1917) { ag.fertn = 0.63; }
+// if(startyr+pdyr == 1918) { ag.fertn = 0.65; }
+// if(startyr+pdyr == 1919) { ag.fertn = 0.66; }
+// if(startyr+pdyr == 1920) { ag.fertn = 0.67; }
+// if(startyr+pdyr == 1921) { ag.fertn = 0.69; }
+// if(startyr+pdyr == 1922) { ag.fertn = 0.70; }
+// if(startyr+pdyr == 1923) { ag.fertn = 0.72; }
+// if(startyr+pdyr == 1924) { ag.fertn = 0.72; }
+// if(startyr+pdyr == 1925) { ag.fertn = 0.73; }
+// if(startyr+pdyr == 1926) { ag.fertn = 0.75; }
+// if(startyr+pdyr == 1927) { ag.fertn = 0.76; }
+// if(startyr+pdyr == 1928) { ag.fertn = 0.77; }
+// if(startyr+pdyr == 1929) { ag.fertn = 0.78; }
+// if(startyr+pdyr == 1930) { ag.fertn = 0.79; }
+// if(startyr+pdyr == 1931) { ag.fertn = 0.80; }
+// if(startyr+pdyr == 1932) { ag.fertn = 0.81; }
+// if(startyr+pdyr == 1933) { ag.fertn = 0.82; }
+// if(startyr+pdyr == 1934) { ag.fertn = 0.84; }
+// if(startyr+pdyr == 1935) { ag.fertn = 0.85; }
+// if(startyr+pdyr == 1936) { ag.fertn = 0.86; }
+// if(startyr+pdyr == 1937) { ag.fertn = 0.87; }
+// if(startyr+pdyr == 1938) { ag.fertn = 0.94; }
+// if(startyr+pdyr == 1939) { ag.fertn = 1.02; }
+// if(startyr+pdyr == 1940) { ag.fertn = 1.09; }
+// if(startyr+pdyr == 1941) { ag.fertn = 1.16; }
+// if(startyr+pdyr == 1942) { ag.fertn = 1.24; }
+// if(startyr+pdyr == 1943) { ag.fertn = 1.31; }
+// if(startyr+pdyr == 1944) { ag.fertn = 1.38; }
+// if(startyr+pdyr == 1945) { ag.fertn = 1.46; }
+// if(startyr+pdyr == 1946) { ag.fertn = 1.53; }
+// if(startyr+pdyr == 1947) { ag.fertn = 1.61; }
+// if(startyr+pdyr == 1948) { ag.fertn = 1.68; }
+// if(startyr+pdyr == 1949) { ag.fertn = 1.75; }
+// if(startyr+pdyr == 1950) { ag.fertn = 1.83; }
+// if(startyr+pdyr == 1951) { ag.fertn = 1.90; }
+// if(startyr+pdyr == 1952) { ag.fertn = 1.97; }
+// if(startyr+pdyr == 1953) { ag.fertn = 2.05; }
+// if(startyr+pdyr == 1954) { ag.fertn = 2.12; }
+// if(startyr+pdyr == 1955) { ag.fertn = 2.19; }
+// if(startyr+pdyr == 1956) { ag.fertn = 2.27; }
+// if(startyr+pdyr == 1957) { ag.fertn = 2.34; }
+// if(startyr+pdyr == 1958) { ag.fertn = 2.94; }
+// if(startyr+pdyr == 1959) { ag.fertn = 3.53; }
+// if(startyr+pdyr == 1960) { ag.fertn = 4.13; }
+// if(startyr+pdyr == 1961) { ag.fertn = 4.72; }
+// if(startyr+pdyr == 1962) { ag.fertn = 5.32; }
+// if(startyr+pdyr == 1963) { ag.fertn = 5.91; }
+// if(startyr+pdyr == 1964) { ag.fertn = 6.51; }
+// if(startyr+pdyr == 1965) { ag.fertn = 8.41; }
+// if(startyr+pdyr == 1966) { ag.fertn = 9.65; }
+// if(startyr+pdyr == 1967) { ag.fertn = 10.43; }
+// if(startyr+pdyr == 1968) { ag.fertn = 11.67; }
+// if(startyr+pdyr == 1969) { ag.fertn = 12.34; }
+// if(startyr+pdyr == 1970) { ag.fertn = 12.56; }
+// if(startyr+pdyr == 1971) { ag.fertn = 12.0; }
+// if(startyr+pdyr == 1972) { ag.fertn = 12.9; }
+// if(startyr+pdyr == 1973) { ag.fertn = 12.79; }
+// if(startyr+pdyr == 1974) { ag.fertn = 11.55; }
+// if(startyr+pdyr == 1975) { ag.fertn = 11.78; }
+// if(startyr+pdyr == 1976) { ag.fertn = 14.25; }
+// if(startyr+pdyr == 1977) { ag.fertn = 14.36; }
+// if(startyr+pdyr == 1978) { ag.fertn = 14.13; }
+// if(startyr+pdyr == 1979) { ag.fertn = 15.14; }
+// if(startyr+pdyr == 1980) { ag.fertn = 14.58; }
+// if(startyr+pdyr == 1981) { ag.fertn = 15.37; }
+// if(startyr+pdyr == 1982) { ag.fertn = 15.14; }
+// if(startyr+pdyr == 1983) { ag.fertn = 15.37; }
+// if(startyr+pdyr == 1984) { ag.fertn = 15.48; }
+// if(startyr+pdyr == 1985) { ag.fertn = 15.71; }
+// if(startyr+pdyr == 1986) { ag.fertn = 14.81; }
+// if(startyr+pdyr == 1987) { ag.fertn = 14.81; }
+// if(startyr+pdyr == 1988) { ag.fertn = 15.37; }
+// if(startyr+pdyr == 1989) { ag.fertn = 14.70; }
+// if(startyr+pdyr == 1990) { ag.fertn = 14.81; }
+// if(startyr+pdyr == 1991) { ag.fertn = 14.36; }
+// if(startyr+pdyr == 1992) { ag.fertn = 14.25; }
+// if(startyr+pdyr == 1993) { ag.fertn = 13.8; }
+// if(startyr+pdyr == 1994) { ag.fertn = 14.47; }
+// if(startyr+pdyr == 1995) { ag.fertn = 14.58; }
+// if(startyr+pdyr == 1996) { ag.fertn = 14.92; }
+// if(startyr+pdyr == 1997) { ag.fertn = 14.58; }
+// if(startyr+pdyr == 1998) { ag.fertn = 14.92; }
+// if(startyr+pdyr == 1999) { ag.fertn = 14.92; }
+// if(startyr+pdyr == 2000) { ag.fertn = 15.26; }
+// if(startyr+pdyr == 2001) { ag.fertn = 14.29; }
+// if(startyr+pdyr == 2002) { ag.fertn = 15.37; }
+// if(startyr+pdyr == 2003) { ag.fertn = 15.26; }
+// if(startyr+pdyr == 2004) { ag.fertn = 15.37; }
+// if(startyr+pdyr == 2005) { ag.fertn = 15.48; }
+// if(startyr+pdyr == 2006) { ag.fertn = 15.53; }
+// if(startyr+pdyr == 2007) { ag.fertn = 15.57; }
+// if(startyr+pdyr == 2008) { ag.fertn = 15.62; }
+// if(startyr+pdyr == 2009) { ag.fertn = 15.66; }
+// if(startyr+pdyr == 2010) { ag.fertn = 15.71; }
+// if(startyr+pdyr == 2011) { ag.fertn = 15.71; } 
+// if(startyr+pdyr > 2011) { ag.fertn = 15.71; } 
+// //if(startyr+pdyr < 1950) 
+// //{
+// //  ag.fertn = 0.0;
+// //}
+// //else
+// //{
+// //  ag.fertn = 15.0;
+// //}
+// //ag.fertn = 15.0;
+//   }
+//   else if (ag.fert1950flag == 1 && ag.state == 2 && pdm == 4)
+//   {
+//    ag.fertn = 5.0;
+//   }
+//   else
+//   {
+//    ag.fertn = 0.0;
+//   }
+
+  if((ag.fert1950flag == 1) && (ag.state == 1 || ag.state == 3) ) {
+    ag.fertn = ag.getFERTNCROP()/12000.;
   }
-  else if (ag.fert1950flag == 1 && ag.state == 2 && pdm == 4)
+  else if (ag.fert1950flag == 1 && ag.state == 2 )
   {
-   ag.fertn = 5.0;
+  //  ag.fertn = 5.0; // the original hold value for pasture 
+    ag.fertn = ag.getFERTNPASTURE()/12000.;
+
   }
   else
   {
@@ -1411,7 +1425,6 @@ nopen = 0;
                  atms.getPREC(),
                  veg.getVEGC());
 
-//    cout << "gpp = " << ag.cmnt << " " << atms.getNDAYS(pdm) << " " << atms.getCO2() << " " << atms.getPAR() << " " << atms.getVPR() << " " << atms.getVPDD() << " " << atms.getDAYL() << " " << veg.pen.getKEXT(ag.cmnt) << " " << microbe.getRH() << " " << atms.getPREC() << " " << veg.getVEGC() << endl;
 //----------------------------------------------//
 //  determine allocation fluxes
   veg.allocate( ag.cmnt,
@@ -1426,7 +1439,6 @@ nopen = 0;
 
     soil.setNINPUT( soil.getNINPUT() + ag.fertn + atms.getNDEP()/12000. );
 
-//    cout << "NINPUT = " << soil.getNINPUT() << " " << ag.fertn << " " << atms.getNDEP() << endl;
     #ifdef OPENN
       soil.setSONINP((veg.getNNF(ag.cmnt)*0.102 * (12.0*soil.getEET()/10.0)+ 0.524 ) /(10.0*12.0));
       veg.setVEGNINP(((1.0-veg.getNNF(ag.cmnt))*0.102 * (12.0*soil.getEET()/10.0)+ 0.524) /(10.0*12.0));
@@ -1615,7 +1627,6 @@ nopen = 0;
                        - veg.getNUPTAKE()) );
   }
 
-//if(initFlag == 1) {cout << "soil resistances = " <<  veg.pen.getR_SS() << " " <<  veg.pen.getR_AS() << " " << atms.getPREC() << " " << soil.getVSM() << " " << soil.getPCTPOR() << " " << veg.getHREF(ag.cmnt) << " " << veg.getKALLOM(ag.cmnt) << " " << veg.pen.getCDLEAF(ag.cmnt) << " " << veg.getLAI() << " " << veg.getLEAFC()+veg.getSAPWOODC()+veg.getHEARTWOODC() << endl; }
 };
 
 /* *************************************************************
@@ -1807,7 +1818,7 @@ void Ttem45::delta( const int& pdm,
                     - veg.getNUPTAKE()
                     - soil.getNLOST();
 
-//cout << "pdavln = " << ag.cmnt << " " << pdstate[I_AVLN] << " " << soil.getNINPUT() << " " << microbe.getNETNMIN() << " " <<  ag.getVOLAN() << " " << veg.getNUPTAKE() << " " << soil.getNLOST() << " " << pstate[I_AVLN] << " " << soil.getRRUN() << " " << soil.getSRUN() << " " << pstate[I_SM] << endl;
+//if(veg.cmnt == 15) {cout << "pdavln = " << pdstate[I_AVLN] << " " << soil.getNINPUT() << " " << microbe.getNETNMIN() << " " <<  ag.getVOLAN() << " " << veg.getNUPTAKE() << " " << soil.getNLOST() << " " << pstate[I_AVLN] << " " << soil.getRRUN() << " " << soil.getSRUN() << " " << pstate[I_SM] << endl;}
 
 
   // Water pools
@@ -1828,7 +1839,6 @@ void Ttem45::delta( const int& pdm,
                     - soil.getEET()
                     - soil.getRPERC()
                     - soil.getSPERC();
-//  cout << "SMOIST in delta = " << pstate[I_SM] << " " << pdstate[I_SM] << " " << atms.getRAIN() << " " << soil.getEET() << " " << ag.irrigate << " " << soil.getRPERC() << " " << soil.getSPERC() << endl;
 //  }
 //if (ag.irrigate > 0.0) {cout << "ag.irrigate  = " << ag.irrigate << endl;}
 //if(veg.cmnt == 15) {cout << "delta sm = " << pdstate[I_SM] << " " << pstate[I_SM] << " " << soil.getEET() << " " << atms.getRAIN() << " " << soil.getRPERC() << " " << soil.getSPERC() << endl;}
@@ -2900,6 +2910,7 @@ void Ttem45::getsitecd( const int& dv, const string&  ecd )
                                             veg.cmnt ),
                  veg.cmnt );
 
+//  cout << "soilnloss = " << soil.getNLOSS(veg.cmnt) << " " << veg.cmnt << endl;
 
   soil.setDENITR( veg.getXMLcmntArrayDouble( fecd[dv],
                                             "siteECD",
@@ -3470,7 +3481,6 @@ void Ttem45::natvegDynamics( const int& pdm, const double& nmax_grow, double pst
 //  transfer information from pstate to veg biomass variables
   updateVegBiomass( pstate );
 
-
 //----------------------------------------------//
 //  update variables used in natvegdynamics:
 //    ag.fertn
@@ -3515,7 +3525,7 @@ void Ttem45::natvegDynamics( const int& pdm, const double& nmax_grow, double pst
   {
     veg.setLAI( ZERO );
   }
-//  cout << "lai = " << veg.getLAI() << " " << veg.getSLA(veg.cmnt) << " " << veg.cmnt << endl;
+//  cout << "lai = " << veg.getLAI() << " " << veg.getSLA(veg.cmnt) << endl;
   
   #ifdef DEBUG_CTEM
     move(DEBUG_ROW,1);
@@ -3619,6 +3629,7 @@ nopen = 0;
                           ag.getVOLAN());
 
 //   microbe.setRH( microbe.getRH() + ag.getCONVRTFLXC());
+                 
 
 //----------------------------------------------//
 //  determine ingpp and innup; calculations for gpp are used in allocate
@@ -3685,7 +3696,6 @@ nopen = 0;
 #ifdef OPENN
 //  soil.setNINPUT((0.102 * (12.0*soil.getEET()/10.0)+ 0.524 )/(10.0*12.0));
   soil.setNINPUT(soil.getNINPUT() + atms.getNDEP()/12000.);
-//  cout << "NDEP in natveg = " << atms.getNDEP() << endl;
   soil.setSONINP((veg.getNNF(veg.cmnt)*0.102 * (12.0*soil.getEET()/10.0)+ 0.524 ) /(10.0*12.0));
   veg.setVEGNINP(((1.0-veg.getNNF(veg.cmnt))*0.102 * (12.0*soil.getEET()/10.0)+ 0.524) /(10.0*12.0));
   if(veg.cmnt == 1) { veg.setVEGNINP(0.0); }
@@ -4743,11 +4753,13 @@ if((pdyr == 0 || pdyr == 1) and pdm == 0) {
         CYCLE ); */
 
 //
-//  Original Approach
+//  NEW Approach
 //
     ag.conversion( veg.cmnt,
-        y[I_ROOTC] + y[I_LABILEC],
-        y[I_ROOTN],
+//        y[I_ROOTC] + y[I_LABILEC],
+        y[I_ROOTC] + y[I_LABILEC]*(1-ag.getVCONVERT()),
+//        y[I_ROOTN],
+        y[I_ROOTN] + y[I_LABILEN]*(1-ag.getVCONVERT()),
         y[I_LEAFC]/ag.getVCONVERT()+y[I_SAPWOODC]+y[I_HEARTWOODC]+y[I_LABILEC],
         y[I_LEAFN]/ag.getVCONVERT()+y[I_SAPWOODN]+y[I_HEARTWOODN],
         y[I_LABILEN],
@@ -4781,6 +4793,11 @@ if((pdyr == 0 || pdyr == 1) and pdm == 0) {
     prevy[I_SAPWOODN] = y[I_SAPWOODN] = ZERO;
     prevy[I_HEARTWOODN] = y[I_HEARTWOODN] = ZERO;
     prevy[I_LABILEN] = y[I_LABILEN] = ZERO;
+// for Chris only
+//    if(ichrt > 6) {
+//       prevy[I_SOLC] = y[I_SOLC] = ZERO;
+//       prevy[I_SOLN] = y[I_SOLN] = ZERO;
+//    }
   }
 
 else if ( disturbflag ==  2 && pdm == (disturbmonth-1)) // timber harvest clearcut
@@ -4868,8 +4885,10 @@ else if ( disturbflag ==  3 && pdm == (disturbmonth-1)) // fire, mid intensity
 //
        distmnthcnt = 1;
        firemnthcnt = 1;
-       dleaf = 0.5;
-       dwood = 0.5;
+//       dleaf = 0.5;
+//       dwood = 0.5;
+       dleaf = 1.0;
+       dwood = 1.0;
        ag.setNATSEEDC (y[I_SEEDC] );
        ag.setNATSEEDSTON (y[I_SEEDN] );
 
@@ -5038,6 +5057,7 @@ else if ( disturbflag ==  4 && pdm == (disturbmonth-1)) //hurricane-strength sto
    }  
   }  
 #endif 
+
 
 
 #ifdef FIRE
@@ -5281,7 +5301,8 @@ else if ( disturbflag ==  4 && pdm == (disturbmonth-1)) //hurricane-strength sto
 
   rhmoist = microbe.setRHMOIST( veg.cmnt, soil.getPCTFLDCAP(), soil.getPCTWILTPT(), soil.getPCTPOR(), y[I_VSM], moistlim );
 
-//  ag.updatestanddead(pdyr,rhmoist,dq10,veg.getCNLTR( veg.cmnt ));
+//  BSF uncommented updatestanddead for fire
+  ag.updatestanddead(pdyr,rhmoist,dq10,veg.getCNLTR( veg.cmnt ));
 //  ag.updatestanddead(pdyr,rhmoist,dq10,microbe.getCNSOIL( veg.cmnt ));
 
 
@@ -5582,9 +5603,7 @@ cseed = 0.0;
 //cout << "time = " << pdyr << " " << pdm << " " << sapwoodcb[1] << " " << sapwoodcb[2] << " " << sapwoodcb[3] << " " << sapwoodcb[4] << " " << sapwoodcb[5] << " " << sapwoodcb[6] << " " << sapwoodcb[7] << " " << sapwoodcb[8] << " " << sapwoodcb[9] << " " << sapwoodcb[10] << " " << sapwoodcb[11] << " " << sapwoodcb[12] << " " << sapwoodcb[13] << " " << sapwoodcb[14] << " " << sapwoodcb[15] << " " << sapwoodcb[16] << " " << sapwoodcb[17] << " " << sapwoodcb[18] << " " << sapwoodcb[19] << " " << sapwoodcb[20] << endl;
 //if(initFlag == 1) {cout << "time = " << startyr + pdyr << " " << pdm << endl;}
 //{cout << "time = " << startyr + pdyr << " " << pdm << endl;}
-//cout << "diag = " << pdyr << " " << pdm << " " << veg.getVEGC() << " " << atms.getTAIR() << " " <<  atms.getCO2() << " " << atms.getNDEP() << " " << veg.getFOZONE() << " " << veg.cmnt << " " << ag.cmnt << " " << ag.state << " " << soil.getPCTPOR() << " " <<  initFlag << endl;o
-
-
+//cout << "diag = " << pdyr << " " << pdm << " " << veg.getVEGC() << " " << atms.getTAIR() << " " <<  atms.getCO2() << " " << atms.getNDEP() << " " << veg.getFOZONE() << " " << veg.cmnt << " " << ag.cmnt << " " << ag.state << " " << soil.getPCTPOR() << " " <<  initFlag << endl;
   mintflag = adapt( NUMEQ, y, ptol, pdm, pdyr, nmax_grow[ichrt] );
 
 

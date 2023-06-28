@@ -307,14 +307,23 @@ class Humnact45 : public ProcessXML45
      }
 
 
-     // fertn **************************************************
+  //    // fertn crop **************************************************
 
-//     inline double getFERTN( void ) { return fertn; }
+    inline double getFERTNCROP( void ) { return fertncrop; }
 
-//     inline void setFERTN( const double& pfertn )
-//     {
-//       fertn = pfertn;
-//     }
+    inline void setFERTNCROP( const double& pfertncrop )
+    {
+      fertncrop = pfertncrop;
+    }
+
+  //  // fertn pasture **************************************************
+
+    inline double getFERTNPASTURE( void ) { return fertnpasture; }
+
+    inline void setFERTNPASTURE( const double& pfertnpasture )
+    {
+      fertnpasture = pfertnpasture;
+    }
 
 //     FIRENDEP **************************************************
 
@@ -1381,6 +1390,7 @@ class Humnact45 : public ProcessXML45
 		 Public Variables
 ************************************************************* */
 
+ 
      // Index for disturbed community type
     int cmnt;
 
@@ -1397,8 +1407,9 @@ class Humnact45 : public ProcessXML45
     int fertflag;
 
     // Monthly fertilizer application
+    double fertncrop;
+    double fertnpasture;
     double fertn;
-
     // Flag to indicate whether or not optimum irrigation of
     //   croplands occur
     int irrgflag;
